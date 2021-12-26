@@ -151,7 +151,13 @@ export default {
               if(res!="error"){
                 this.loading=true
                 setTimeout(() => {
-                  this.$router.replace({name:res})
+                  if(res==undefined || res==null){
+                    this.loading=false
+                    this.$message.error("服务器出错了...")
+                  }
+                  else{
+                    this.$router.replace({name:res})
+                  }
                 }, 3000);
               }
               else{
