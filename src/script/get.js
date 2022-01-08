@@ -1,5 +1,6 @@
-export const URL = 'http://127.0.0.1:8083'
-export const Cloud_URL = 'http://118.31.55.121:8083'
+export const URL = 'http://127.0.0.1:8083'                          //本地服务器地址
+export const Cloud_URL = 'http://118.31.55.121:8083'                //正式服务器地址
+export const test_URL = 'http://118.31.55.121:8888'                 //测试服务器地址
 
 //首页管理
 

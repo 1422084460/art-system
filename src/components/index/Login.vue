@@ -108,7 +108,13 @@ export default {
           confirm_pwd: '',
           email: '',
           code: '',
-          avatar: ''
+          avatar: '',
+          is_admin: '0',
+          score: 1,
+          money: 0.00,
+          status: 'offline',
+          is_avatar_prepare: '',
+          phone_num: ''
         },
         img_list:[
           {value: avatar1,img: '预设头像1'},
@@ -174,7 +180,7 @@ export default {
         getCode(){
           this.$notify({
             title: '提示',
-            message: '已向您的邮箱发送验证码，请查收！',
+            message: '已向您的邮箱发送验证码，注意查收！',
             type: 'success',
             duration: 8000
           });
